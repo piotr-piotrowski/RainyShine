@@ -11,7 +11,7 @@
 		C7A53C651973DE1D41C02FD7 /* Pods_rainyshiny.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9973A1214AA3A4E6FA5B191D /* Pods_rainyshiny.framework */; };
 		D89429A82806389D377FADA8 /* Pods_rainyshinyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A14E40BA68F608D3DC6E6B /* Pods_rainyshinyTests.framework */; };
 		F76205061E93A63C00C57D09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76205051E93A63C00C57D09 /* AppDelegate.swift */; };
-		F76205081E93A63C00C57D09 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76205071E93A63C00C57D09 /* ViewController.swift */; };
+		F76205081E93A63C00C57D09 /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76205071E93A63C00C57D09 /* WeatherVC.swift */; };
 		F762050B1E93A63C00C57D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F76205091E93A63C00C57D09 /* Main.storyboard */; };
 		F762050D1E93A63C00C57D09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F762050C1E93A63C00C57D09 /* Assets.xcassets */; };
 		F76205101E93A63C00C57D09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F762050E1E93A63C00C57D09 /* LaunchScreen.storyboard */; };
@@ -46,7 +46,7 @@
 		EEED1DE630247A5F3CC5E0BD /* Pods-rainyshinyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainyshinyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-rainyshinyTests/Pods-rainyshinyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F76205021E93A63C00C57D09 /* rainyshiny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainyshiny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F76205051E93A63C00C57D09 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F76205071E93A63C00C57D09 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F76205071E93A63C00C57D09 /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		F762050A1E93A63C00C57D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F762050C1E93A63C00C57D09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F762050F1E93A63C00C57D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -138,7 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				F76205051E93A63C00C57D09 /* AppDelegate.swift */,
-				F76205071E93A63C00C57D09 /* ViewController.swift */,
+				F76205071E93A63C00C57D09 /* WeatherVC.swift */,
 				F76205091E93A63C00C57D09 /* Main.storyboard */,
 				F762050C1E93A63C00C57D09 /* Assets.xcassets */,
 				F762050E1E93A63C00C57D09 /* LaunchScreen.storyboard */,
@@ -449,7 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F76205081E93A63C00C57D09 /* ViewController.swift in Sources */,
+				F76205081E93A63C00C57D09 /* WeatherVC.swift in Sources */,
 				F76205061E93A63C00C57D09 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -711,6 +711,7 @@
 				F762052C1E93A63C00C57D09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F762052D1E93A63C00C57D09 /* Build configuration list for PBXNativeTarget "rainyshinyTests" */ = {
 			isa = XCConfigurationList;
@@ -719,6 +720,7 @@
 				F762052F1E93A63C00C57D09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F76205301E93A63C00C57D09 /* Build configuration list for PBXNativeTarget "rainyshinyUITests" */ = {
 			isa = XCConfigurationList;
@@ -727,6 +729,7 @@
 				F76205321E93A63C00C57D09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
