@@ -82,14 +82,14 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="WAx-fd-oZv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="80" id="WAx-fd-oZv" customClass="WeatherCell" customModule="rainyshiny" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WAx-fd-oZv" id="iO3-Cs-YnT">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-ze-nIu">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5V-ze-nIu">
                                                     <rect key="frame" x="16" y="18.5" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="hZU-AX-Ya8"/>
@@ -149,6 +149,13 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLbl" destination="yjD-C7-MMw" id="LIi-1l-q0m"/>
+                                            <outlet property="highTemp" destination="b4j-gm-n49" id="JFM-IZ-whg"/>
+                                            <outlet property="lowTemp" destination="Peq-gd-gI3" id="0EU-Un-zUk"/>
+                                            <outlet property="weatherIcon" destination="D5V-ze-nIu" id="Iyv-p6-w2U"/>
+                                            <outlet property="weatherType" destination="fW8-ky-AzD" id="ad1-8P-Ll4"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
